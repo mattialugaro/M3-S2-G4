@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react'
 import BookList from '../components/BookList'
-import AddComment from '../components/AddComment';
 
 describe("correctly number of the card", () => {
 
@@ -20,11 +19,11 @@ describe("correctly mounted CommentArea", () => {
 
   it("Correctly mounted CommentArea", () => {
 
-    render(<AddComment />);
+    render(<BookList/>);
 
-    const comments = screen.getByText(/recensione/i)
+    const comment = screen.getByText(/recensione/i)
 
-    expect(comments).toBeInTheDocument();
+    expect(comment).toBeInTheDocument();
     
   })
   
