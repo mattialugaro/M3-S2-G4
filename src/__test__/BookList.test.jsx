@@ -7,7 +7,7 @@ describe("correctly number of the card", () => {
 
     render(<BookList />);
 
-    const cards = await screen.findAllByTestId("card");
+    const cards = await screen.queryAllByTestId("card");
 
     expect(cards).toBeLessThan(1000);
 

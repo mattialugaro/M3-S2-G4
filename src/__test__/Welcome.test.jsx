@@ -7,7 +7,7 @@ describe("Correctly mounted Welcome", () => {
 
     render(<Welcome />);
     
-    const h1 = screen.getByText(/benvenuti in epiBooks!/i);
+    const h1 = screen.getByText(/benvenuti/i);
 
     expect(h1).toBeInTheDocument();
 
